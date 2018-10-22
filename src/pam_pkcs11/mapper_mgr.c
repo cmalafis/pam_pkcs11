@@ -42,7 +42,7 @@ struct mapper_listitem *root_mapper_list;
 
 /*
 * load and initialize a module
-* returns descriptor on success, null on fail
+* returns descriptor on success, null on fail attempt here
 */
 struct mapper_instance *load_module(scconf_context *ctx, const char * name) {
 
@@ -313,4 +313,3 @@ int match_user(X509 *x509, const char *login) {
 	}
 	return 0;
 }
-
